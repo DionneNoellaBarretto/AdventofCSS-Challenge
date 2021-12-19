@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>⏲-Pomodoro Timer || Advent of CSS</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="ring">
+        <svg width="518" height="518" viewbox="0 0 518 518">
+          <circle stroke-width="9px" x="0" y="y" cx="259" cy="259" r="254" />
+        </svg>
+      </div>
+
+      <div class="timer">
+        <div class="time">
+          <div class="minutes">
+            <input
+              class="timer-input"
+              label="minute"
+              title="minute"
+              type="text"
+              value="00"
+              maxlength="2"
+              disabled
+            />
+          </div>
+          <div class="colon">:</div>
+          <div class="seconds">
+            <input
+              class="timer-input"
+              label="second"
+              title="second"
+              type="text"
+              value="00"
+              maxlength="2"
+              disabled
+            />
+          </div>
+        </div>
+        <input type="button" id="startStop" value="Start" class="start" />
+        <button class="settings">
+          <img src="images/gear.svg" alt="Settings" />
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="developer-author">
+          <a
+            href="https://dionnenoellabarretto.github.io/"
+            title="Click to navigate to Dionne Noella's Landing Page"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Copyrights © 2021 -
+            <img
+              src="./images/dnb.jfif"
+              class="dnb"
+              title="Click to navigate to Dionne Noella's Landing Page"
+              alt="dnb"
+            />
+            Dionne Noella Barretto</a
+          >
+          |
+          <a
+            title="Click to navigate to the challenge instructions"
+            href="https://store.selfteach.me/courses/30f86466-aeb2-4b3c-b43d-5055f178493c/1099418-challenge-1/3310213-challenge-1"
+            rel="noopener noreferrer"
+            target="_blank"
+            >Advent of CSS-Challenge#1</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/main.js"></script>
+</html>
